@@ -1,0 +1,26 @@
+<div class="user_details_container">
+    <div>
+        <span class="title">First name:</span> {{user.firstName}}
+        <span *ngIf="user.grade != 0">{{user.grade}}/10 ({{user.gradeCouner}})</span>
+    </div>
+    <div>
+        <span class="title">Last name:</span>  {{user.email}};
+    </div>
+    <div>
+        <span class="title">E-mail:</span> {{user.email}};
+    </div>
+    <div>
+        <span class="title">Phone:</span> {{user.phone}};
+    </div>
+    <div *ngIf="user.isChef">
+        <div>
+            <span class="title">Price per hour:</span> {{user.chef.pricePerHour}};
+        </div>
+        <div>
+            <span class="title">Min. price:</span> {{user.chef.minPrice}};
+        </div>
+        <div>
+            <span class="title">Description:</span> {{user.chef.description}};
+        </div>
+    </div>
+</div>

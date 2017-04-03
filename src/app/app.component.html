@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
+<h1 class="title">
+  myChef.com
 </h1>
+
+<nav>
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+  <a routerLink="/users" routerLinkActive="active">Users</a>
+  <a routerLink="/register" routerLinkActive="active">Register</a>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>

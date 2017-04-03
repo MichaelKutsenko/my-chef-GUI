@@ -1,0 +1,31 @@
+:host /deep/ h1, h2, h3, h4, h5, h6 {
+  width: 100%;
+  text-align: center !important;
+  font-style: italic;
+}
+
+:host {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1.title {
+  padding: 0 0 6px 65px;
+  /*background: url('app/images/angular.png') no-repeat;*/
+}
+
+nav h4 {
+  margin: 4px 0 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #E03237;
+}
+
+nav a.active {
+  border-radius: 3px;
+  padding: 2px 8px;
+  background-color: #E03237;
+  color:white;
+}

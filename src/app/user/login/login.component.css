@@ -1,0 +1,7 @@
+.container {
+  display: block;
+  margin: 15% auto;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid crimson;
+}

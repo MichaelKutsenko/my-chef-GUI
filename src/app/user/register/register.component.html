@@ -1,0 +1,86 @@
+<div class="container">
+  <div>
+    <label class="title">login</label>
+    <input [(ngModel)]="login" placeholder="login">
+    <span *ngIf="!login">
+      Can not be empty.
+    </span>
+  </div>
+
+  <div>
+    <label class="title">password</label>
+    <input [(ngModel)]="password" placeholder="password">
+    <span *ngIf="!password">
+      Can not be empty.
+    </span>
+  </div>
+
+  <div>
+    <label class="title">email</label>
+    <input [(ngModel)]="email" placeholder="email">
+    <span *ngIf="!email">
+      Can not be empty.
+    </span>
+  </div>
+
+  <div>
+    <label class="title">firstName</label>
+    <input [(ngModel)]="firstName" placeholder="firstName">
+    <span *ngIf="!firstName">
+      Can not be empty.
+    </span>
+  </div>
+
+  <div>
+    <label class="title">lastName</label>
+    <input [(ngModel)]="lastName" placeholder="lastName">
+    <span *ngIf="!lastName">
+      Can not be empty.
+    </span>
+  </div>
+
+  <div>
+    <label class="title">phone</label>
+    <input [(ngModel)]="phone" placeholder="phone">
+  </div>
+
+  <div>
+    <label class="title">Are you chef?</label>
+    <select [(ngModel)]="isChef">
+      <option [ngValue]="false">No</option>
+      <option [ngValue]="true">Yes</option>
+    </select>
+  </div>
+
+  <div *ngIf="isChef">
+    <div>
+      <label class="title">pricePerHour</label>
+      <input [(ngModel)]="pricePerHour" placeholder="pricePerHour">
+      <span *ngIf="!pricePerHour && isChef">
+        Can not be empty.
+      </span>
+    </div>
+
+    <div>
+      <label class="title">minPrice</label>
+      <input [(ngModel)]="minPrice" placeholder="minPrice">
+      <span *ngIf="!minPrice && isChef">
+        Can not be empty.
+      </span>
+    </div>
+
+    <div>
+      <label class="title">description</label>
+      <input [(ngModel)]="description" placeholder="description">
+      <span *ngIf="!description && isChef">
+        Can not be empty.
+      </span>
+    </div>
+  </div>
+
+  <div>
+    <label class="title"></label>
+    <button (click)="saveUser()" [disabled]="!login||!password||!email||!firstName||!lastName||(isChef&&(!pricePerHour||!minPrice||!description))">Save</button>
+  </div>
+
+</div>

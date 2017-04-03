@@ -1,0 +1,15 @@
+<div class="container" >
+  <div>
+      <div>
+        <input [(ngModel)]="user_login" placeholder="Login">
+    </div>
+
+    <div>
+        <input [(ngModel)]="user_password" type="password" placeholder="Password">
+    </div>
+
+    <div class="error">{{errorMsg}}</div>
+    <button  (click)="login()"
+            type="submit" name="action">Login</button>
+  </div>
+</div>

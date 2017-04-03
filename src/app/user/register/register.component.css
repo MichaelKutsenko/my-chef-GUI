@@ -1,0 +1,13 @@
+.container {
+  display: block;
+  margin: 15% auto;
+  padding: 25px;
+  text-align: left;
+  border: 1px solid crimson;
+}
+
+.title {
+  display: inline-block;
+  width: 25%;
+  margin-left: 200px;
+}

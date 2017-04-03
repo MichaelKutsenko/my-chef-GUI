@@ -1,0 +1,23 @@
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.list {
+    display: inline-block;
+    width: 50%;
+    margin: 25px;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+.details_container {
+    position: fixed;
+    top: 20%;
+    display: inline-block;
+    width: 400px;
+    padding: 25px;
+    border: 2px solid #ddd;
+}
